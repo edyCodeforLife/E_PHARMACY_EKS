@@ -1,0 +1,47 @@
+{
+	"presets": [
+		"next/babel"
+	],
+	"plugins": [
+		"@emotion",
+		"@babel/plugin-transform-runtime",
+		"@babel/plugin-proposal-optional-chaining",
+		"transform-html-import-to-string",
+		[
+			"babel-plugin-transform-imports",
+			{
+				"@mui/material": {
+					"transform": "@mui/material/${member}",
+					"preventFullImport": true
+				},
+				"@mui/icons-material": {
+					"transform": "@mui/icons-material/${member}",
+					"preventFullImport": true
+				},
+				"@emotion/styled": {
+					"transform": "@emotion/styled/${member}",
+					"preventFullImport": true
+				}
+				// "@material-ui/lab": {
+				// 	"transform": "@material-ui/lab/${member}",
+				// 	"preventFullImport": true
+				// }
+			}
+		]
+		// [
+		// 	"babel-plugin-styled-components",
+		// 	{
+		// 		"ssr": true,
+		// 		"displayName": true,
+		// 		"preprocess": false
+		// 	}
+		// ]
+	],
+	"env": {
+		"test": {
+			"plugins": [
+				"transform-dynamic-import"
+			]
+		}
+	}
+}

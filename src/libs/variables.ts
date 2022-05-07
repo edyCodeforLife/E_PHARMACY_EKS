@@ -1,0 +1,10 @@
+export const LOGIN_URL = '/login';
+export const PUBLIC_URL = [LOGIN_URL, '/blankpage'];
+export const HOME_URL = '/';
+export const COOKIES_NAME = 'alt_user_token';
+export const alteaWebViewURL = 'damdsaAdadBdsadZ23Adadl';
+export const globalColorDefault = '#1832AB';
+export const SECRET_KEY = 'UYGHJKSNDHKSDHguyaiksdjbd';
+export const SECRET_KEY2 = 'qwertyuisdfghjertyuio';
+export const SECRET_KEY3 = 'asdadadadasdadqe123123e';
+export const GOOGLE_MAPS_API_KEY = "AIzaSyAXKMkhi5UHX1U3_uXCrfGZ3vAp_yWw370";
